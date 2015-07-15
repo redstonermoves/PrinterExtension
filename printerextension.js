@@ -17,7 +17,7 @@
         dataType:'script'
 
     });
-	ext.version = "v1.1";
+	ext.version = "v1.2";
 	
 	ext._shutdown = function() {};
 	
