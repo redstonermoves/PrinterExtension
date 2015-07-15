@@ -49,17 +49,43 @@
 <h2>
 <a id="print-html-s" class="anchor" href="#print-html-s" aria-hidden="true"><span class="octicon octicon-link"></span></a>Print HTML %s</h2>
 
-<p>Print HTML %s="TEXT TO PRINT HTML SUPPORTED"</p>
+<p>Print HTML %s="TEXT TO PRINT HTML SUPPORTED"
+Prints HTML</p>
 
 <h2>
 <a id="print-image-s" class="anchor" href="#print-image-s" aria-hidden="true"><span class="octicon octicon-link"></span></a>Print Image %s</h2>
 
-<p>Print Image %s="IMAGE TO PRINT"</p>
+<p>Print Image %s="IMAGE TO PRINT"
+Prints an Image</p>
+
+<h2>
+<a id="google-cloud-print-html-s" class="anchor" href="#google-cloud-print-html-s" aria-hidden="true"><span class="octicon octicon-link"></span></a>Google Cloud Print HTML %s</h2>
+
+<p>Google Cloud Print HTML %s="TEXT TO PRINT HTML SUPPORTED"
+Prints HTML with Google Cloud Print</p>
+
+<h2>
+<a id="google-cloud-print-image-s" class="anchor" href="#google-cloud-print-image-s" aria-hidden="true"><span class="octicon octicon-link"></span></a>Google Cloud Print Image %s</h2>
+
+<p>Google Cloud Print Image %s="IMAGE TO PRINT"
+Prints an Image with Google Cloud Print</p>
 
 <h1>
 <a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How it works?</h1>
 
+<h2>
+<a id="print--blocks" class="anchor" href="#print--blocks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Print * blocks</h2>
+
 <p>It opens a page with the contents to print then runs JavaScript window.print(); to print it!</p>
+
+<h2>
+<a id="google-cloud-print--blocks" class="anchor" href="#google-cloud-print--blocks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Google Cloud Print * blocks</h2>
+
+<p>It uses the Google Cloud Print Gadget JavaScript Code when you run the block it runs</p>
+
+<div class="highlight highlight-JavaScript"><pre><span class="pl-k">var</span> gcpGadget <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">cloudprint.Gadget</span>();
+gcpGadget.setPrintDocument(<span class="pl-s"><span class="pl-pds">"</span>text/html<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Printer Extension v1.1<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>***WHAT TO PRINT***<span class="pl-pds">"</span></span>)
+gcpGadget.openPrintDialog();</pre></div>
         </section>
 
         <aside id="sidebar">
