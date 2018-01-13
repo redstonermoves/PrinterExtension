@@ -29,7 +29,7 @@
 		var printWindow = window.open("", "Printer Extension " + ext.version);
 		printWindow.document.title = "Printer Extension " + ext.version;
 		printWindow.document.write("<head><title>Printer Extension " + ext.version + "</title></head>");
-		printWindow.document.write(text + "<br><hr color='black'><small>Printed using Printer Extension " + ext.version + " by Mrcomputer1</small>" + "</body>");
+		printWindow.document.write(text + "<br><hr color='black'><small>A remix of Mrcomputer1 " + ext.version + " by redstonermoves!</small>" + "</body>");
 		printWindow.print();
 	};
 	
